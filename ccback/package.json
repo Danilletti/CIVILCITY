@@ -1,0 +1,27 @@
+{
+  "name": "ccbackend",
+  "version": "1.0.0",
+  "description": "Best Proyect",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "keywords": [
+    "cc",
+    "civil",
+    "user",
+    "exito",
+    "millos",
+    "djf"
+  ],
+  "author": "djf",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.0"
+  }
+}
