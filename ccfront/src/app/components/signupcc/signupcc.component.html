@@ -1,35 +1,36 @@
 <body>
   <img id="imagenbackground1">
 </body>
-<div class="animate__animated animate__bounce d-flex col col-6 container buttttttt ">
-  <div class="card  col col-12">
-    <a class="login">REGISTRATE</a>
-    <div class="inputBox">
-      <input type="text" required="required">
-      <span>Nombre</span>
-    </div>
-    <div class="inputBox">
-      <input type="text" required="required">
-      <span>Apellido</span>
-    </div>
-    <div class="inputBox">
-      <input type="email" required="required">
-      <span>Correo Electronico</span>
-    </div>
-    <div class="inputBox">
-      <input type="password" required="required">
-      <span>Contraseña</span>
-    </div>
-    <div class="inputBox">
-      <select class=" form-select" aria-label="Default select example">
-        <option selected>Selecciona tu universidad</option>
-        <option value="1">UNIVERSIDAD LA SALLE</option>
-        <option value="2">UNIVESIDAD SERGIO ARBOLEDA</option>
-        <option value="3">UNIVERSIDAD DE LOS ANDES</option>
-      </select>
-    </div>
 
-
-    <button class="enter">Enter</button>
+<form [formGroup]="usersForm" (ngSubmit)="agregarUser()">
+  <div class="animate__animated animate__bounce d-flex col col-6 container buttttttt ">
+    <div class="card  col col-12">
+      <a class="login">REGISTRATE</a>
+      <div class="inputBox">
+        <input formControlName="nombre" type="text" required="required">
+        <span>Nombre</span>
+      </div>
+      <div class="inputBox">
+        <input formControlName="apellido" type="text" required="required">
+        <span>Apellido</span>
+      </div>
+      <div class="inputBox">
+        <input formControlName="correo" type="email" required="required">
+        <span>Correo Electronico</span>
+      </div>
+      <div class="inputBox">
+        <input formControlName="password" type="password" required="required">
+        <span>Contraseña</span>
+      </div>
+      <div class="inputBox">
+        <select formControlName="universidad" class="form-select" aria-label="Default select example">
+          <option selected>Selecciona tu universidad</option>
+          <option value="1">UNIVERSIDAD LA SALLE</option>
+          <option value="2">UNIVESIDAD SERGIO ARBOLEDA</option>
+          <option value="3">UNIVERSIDAD DE LOS ANDES</option>
+        </select>
+      </div>
+      <button type='submit' class="enter">Enter</button>
+    </div>
   </div>
-</div>
+</form>

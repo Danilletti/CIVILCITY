@@ -2,6 +2,10 @@
 background-color: transparent;
 }
 
+.reglog{
+  cursor: pointer;
+}
+
 
 .bdock {
   text-decoration: none;
@@ -181,63 +185,17 @@ background-color: transparent;
 .dock .dock-container li .ico-bin:hover {
   margin-left: 10px;
 }
-
-.li-1:hover .name {
-  visibility: visible !important;
+.iccccc{
+  transform: translate(0px,18px);
 }
 
-.li-2:hover .name {
-  visibility: visible !important;
+.transDown{
+  transition: .5s, color .10s;
+      -webkit-transition: .5s, color .10s;
+      -moz-transition: .5s, color .10s;
 }
-
-.li-3:hover .name {
-  visibility: visible !important;
-}
-
-.li-4:hover .name {
-  visibility: visible !important;
-}
-
-.li-5:hover .name {
-  visibility: visible !important;
-}
-
-.li-6:hover .name {
-  visibility: visible !important;
-}
-
-.li-7:hover .name {
-  visibility: visible !important;
-}
-
-.li-8:hover .name {
-  visibility: visible !important;
-}
-
-.li-9:hover .name {
-  visibility: visible !important;
-}
-
-.li-10:hover .name {
-  visibility: visible !important;
-}
-
-.li-11:hover .name {
-  visibility: visible !important;
-}
-
-.li-12:hover .name {
-  visibility: visible !important;
-}
-
-.li-13:hover .name {
-  visibility: visible !important;
-}
-
-.li-14:hover .name {
-  visibility: visible !important;
-}
-
-.li-15:hover .name {
-  visibility: visible !important;
+.transDown:hover{
+  transform: translatey(20px);
+      -webkit-transform: translatey(20px);
+      -moz-transform: translatey(20px);
 }
